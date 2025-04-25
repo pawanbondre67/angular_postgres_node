@@ -1,0 +1,127 @@
+:host {
+    display: block;
+    height: 100vh;
+    /* overflow: hidden; */
+  }
+  
+  .login-form {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  }
+  
+  .login-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    box-sizing: border-box;
+  }
+  
+  .login-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+  
+  .login-icon {
+    background: #3f51b5;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1.25rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-icon mat-icon {
+    color: white;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .login-title {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 500;
+    color: #3f51b5;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+  
+  .login-subtitle {
+    color: #666;
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.4;
+  }
+  
+  .form-field {
+    margin-bottom: 1.25rem;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .login-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+  
+  .login-button {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .forgot-password {
+    text-align: right;
+    margin: -0.5rem 0 1rem 0;
+  }
+  
+  .signup-link {
+    text-align: center;
+    margin-top: 2rem;
+    color: #666;
+    font-size: 0.875rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+   
+    
+    .login-icon {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 1rem;
+    }
+    
+    .login-title {
+      margin-bottom: 0.25rem;
+    }
+  }
+  
+  @media (max-height: 700px) {
+    .login-form {
+      align-items: flex-start;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    
+    .login-card {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
